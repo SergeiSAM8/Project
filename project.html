@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2196f3
+        }
+
+        #allbuttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-family: "Russo One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            -webkit-text-stroke: 1px #000;
+
+        }
+
+        #onebutton {
+            height: 80px;
+            width: 120px;
+            position: relative;
+            left: 42%;
+            background: red;
+            border-radius: 8px;
+            font-family: "Russo One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            border: 2px solid #000;
+            color: white;
+            -webkit-text-stroke: 1px #000;
+            text-align: center;
+
+        }
+
+        #onebutton:active {
+            background: palevioletred
+        }
+
+        #twobutton {
+            height: 80px;
+            width: 120px;
+            position: relative;
+            left: 42%;
+            background: darkblue;
+            border-radius: 8px;
+            font-family: "Russo One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            border: 2px solid #000;
+            color: white;
+            -webkit-text-stroke: 1px #000;
+            text-align: center;
+
+        }
+
+        #twobutton:active {
+            background: turquoise
+        }
+
+        #threebutton {
+            height: 80px;
+            width: 120px;
+            position: relative;
+            left: 42%;
+            background: goldenrod;
+            border-radius: 8px;
+            font-family: "Russo One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            border: 2px solid #000;
+            color: white;
+            -webkit-text-stroke: 1px #000;
+            text-align: center;
+
+        }
+
+        #threebutton:active {
+            background: khaki
+        }
+
+        #image1 {
+            left: 120px;
+            display: flex;
+            position: relative;
+        }
+
+        #image2 {
+            position: relative;
+            top: 330px;
+            width: 10%;
+            height: 10%;
+        }
+
+        #image3 {
+            position: relative;
+            top: 330px;
+            width: 10%;
+            height: 10%;
+        }
+    </style>
+    <img src="https://ssau.ru/i/logo/ssau_preview.jpg" id="image1">
+    <img src="https://cdn-icons-png.flaticon.com/512/88/88271.png" id="image2">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Settings_app_icon.png?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original"
+        id="image3">
+</head>
+
+<body>
+    <h1 id="lol">Сайт для иностранных студентов</h1>
+    <div id="allbuttons">
+        <button id="onebutton">Для китайских студентов</button>
+        <button id="twobutton">Для французских студентов</button>
+        <button id="threebutton">Для испанских студентов</button>
+    </div>
+    <script>
+        const onebutton = document.getElementById('onebutton');
+        onebutton.addEventListener('click', function () {
+            const lol = document.getElementById('lol');
+            lol.style.display = 'none';
+            const twobutton = document.getElementById('twobutton');
+            twobutton.style.display = 'none';
+            const threebutton = document.getElementById('threebutton');
+            threebutton.style.display = 'none';
+            this.style.display = 'none';
+            const image1 = document.getElementById('image1');
+            image1.style.display = 'none'
+        })
+        const twobutton = document.getElementById('twobutton');
+        twobutton.addEventListener('click', function () {
+            const lol = document.getElementById('lol');
+            lol.style.display = 'none';
+            const onebutton = document.getElementById('onebutton');
+            onebutton.style.display = 'none';
+            const threebutton = document.getElementById('threebutton');
+            threebutton.style.display = 'none';
+            this.style.display = 'none';
+            const image1 = document.getElementById('image1');
+            image1.style.display = 'none'
+        })
+        const threebutton = document.getElementById('threebutton');
+        threebutton.addEventListener('click', function () {
+            const lol = document.getElementById('lol');
+            lol.style.display = 'none';
+            const twobutton = document.getElementById('twobutton');
+            twobutton.style.display = 'none';
+            const onebutton = document.getElementById('onebutton');
+            onebutton.style.display = 'none';
+            this.style.display = 'none';
+            const image1 = document.getElementById('image1');
+            image1.style.display = 'none'
+        })
+        const image2 = document.getElementById('image2');
+        image2.addEventListener('click', function () {
+            const lol = document.getElementById('lol');
+            lol.style.display = 'none';
+            const twobutton = document.getElementById('twobutton');
+            twobutton.style.display = 'none';
+            const onebutton = document.getElementById('onebutton');
+            onebutton.style.display = 'none';
+            this.style.display = 'none';
+            const image1 = document.getElementById('image1');
+            image1.style.display = 'none'
+            this.style.display = 'none';
+            const image3 = document.getElementById('image3');
+            image3.style.display = 'none'
+            const threebutton = document.getElementById('threebutton');
+            threebutton.style.display = 'none';
+        })
+          const image3 = document.getElementById('image3');
+        image3.addEventListener('click', function () {
+            const lol = document.getElementById('lol');
+            lol.style.display = 'none';
+            const twobutton = document.getElementById('twobutton');
+            twobutton.style.display = 'none';
+            const onebutton = document.getElementById('onebutton');
+            onebutton.style.display = 'none';
+            this.style.display = 'none';
+            const image1 = document.getElementById('image1');
+            image1.style.display = 'none'
+            this.style.display = 'none';
+            const image2 = document.getElementById('image2');
+            image2.style.display = 'none'
+            const threebutton = document.getElementById('threebutton');
+            threebutton.style.display = 'none';
+        })
+    </script>
+</body>
+
+</html>
