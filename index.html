@@ -23,6 +23,7 @@
             font-weight: 400;
             font-style: normal;
             -webkit-text-stroke: 1px #000;
+            position: relative;
 
         }
 
@@ -90,7 +91,7 @@
         }
 
         #image1 {
-            left: 120px;
+            left: 240px;
             display: flex;
             position: relative;
         }
@@ -134,6 +135,10 @@
             this.style.display = 'none';
             const image1 = document.getElementById('image1');
             image1.style.display = 'none'
+            const image3 = document.getElementById('image3');
+            image3.style.display = 'none'
+            const image2 = document.getElementById('image2');
+            image2.style.display = 'none'
         })
         const twobutton = document.getElementById('twobutton');
         twobutton.addEventListener('click', function () {
@@ -146,6 +151,10 @@
             this.style.display = 'none';
             const image1 = document.getElementById('image1');
             image1.style.display = 'none'
+            const image3 = document.getElementById('image3');
+            image3.style.display = 'none'
+            const image2 = document.getElementById('image2');
+            image2.style.display = 'none'
         })
         const threebutton = document.getElementById('threebutton');
         threebutton.addEventListener('click', function () {
@@ -158,6 +167,10 @@
             this.style.display = 'none';
             const image1 = document.getElementById('image1');
             image1.style.display = 'none'
+            const image3 = document.getElementById('image3');
+            image3.style.display = 'none'
+            const image2 = document.getElementById('image2');
+            image2.style.display = 'none'
         })
         const image2 = document.getElementById('image2');
         image2.addEventListener('click', function () {
@@ -176,7 +189,7 @@
             const threebutton = document.getElementById('threebutton');
             threebutton.style.display = 'none';
         })
-          const image3 = document.getElementById('image3');
+        const image3 = document.getElementById('image3');
         image3.addEventListener('click', function () {
             const lol = document.getElementById('lol');
             lol.style.display = 'none';
